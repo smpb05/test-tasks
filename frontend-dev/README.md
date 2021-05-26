@@ -90,3 +90,43 @@ const MenuItems = [
   ]
 }
 ```
+
+### Задание 4
+
+- Необходимо указать ошибку в реализации и способ ее решения
+
+```
+class MyComponent extends React.Component {
+    state = {
+        counter: 1,
+    };
+
+    increment = () => this.setState({ counter: this.state.counter + 1 });
+    doubleIncrement = () => {
+        this.increment();
+        this.increment();
+    }
+}
+```
+
+### Задание 5
+
+- Указать на ошибки в реализации
+
+```
+class UserList extends React.Component {
+    const userList = [
+        {id: 1, name: 'user 1', ...},
+        {id: 2, name: 'user 2', ...},
+        ...
+    ];
+
+    render() {
+        return <div>
+            userList.map(user => {
+                <User user={user} />
+            })
+        </div>
+    }
+}
+```
