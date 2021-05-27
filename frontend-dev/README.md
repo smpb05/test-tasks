@@ -95,7 +95,7 @@ const MenuItems = [
 
 - Необходимо указать ошибку в реализации и способ ее решения
 
-```
+```js
 class MyComponent extends React.Component {
     state = {
         counter: 1,
@@ -113,7 +113,7 @@ class MyComponent extends React.Component {
 
 - Указать на ошибки в реализации
 
-```
+```js
 class UserList extends React.Component {
     const userList = [
         {id: 1, name: 'user 1', ...},
